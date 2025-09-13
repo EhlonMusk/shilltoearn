@@ -23,6 +23,27 @@ const dayNightToggle = () => {
   const xBtn = document.querySelector(".xlogo");
   xBtn.classList.toggle("toggle");
 
+  const joinBorderContainer = document.querySelector(".joinBorderContainer");
+  joinBorderContainer.classList.toggle("toggle");
+
+  const distributionContent = document.querySelector(".distributionContent");
+  distributionContent.classList.toggle("toggle");
+
+  const distributionStatusBox = document.querySelector(
+    ".distributionStatusBox"
+  );
+  distributionStatusBox.classList.toggle("toggle");
+
+  const rankingsContent = document.querySelector(".rankingsContent");
+  if (rankingsContent) {
+    rankingsContent.classList.toggle("toggle");
+  }
+
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card) => {
+    card.classList.toggle("toggle");
+  });
+
   const aColor = document.querySelectorAll("a");
   aColor.forEach((a) => {
     a.classList.toggle("toggle");
@@ -51,6 +72,29 @@ const dayNightToggle = () => {
   const summary = document.querySelectorAll("summary");
   summary.forEach((summary) => {
     summary.classList.toggle("toggle");
+  });
+
+  const leaderboardBoxes = document.querySelectorAll(".leaderboardBox");
+  leaderboardBoxes.forEach((leaderboardBox) => {
+    leaderboardBox.classList.toggle("toggle");
+  });
+
+  const distributionInfoBoxes = document.querySelectorAll(
+    ".distributionInfoBox"
+  );
+
+  distributionInfoBoxes.forEach((distributionInfoBox) => {
+    distributionInfoBox.classList.toggle("toggle");
+  });
+
+  const transactionLists = document.querySelectorAll(".transaction-list");
+  transactionLists.forEach((transactionList) => {
+    transactionList.classList.toggle("toggle");
+  });
+
+  const transactionTime = document.querySelectorAll(".transaction-time");
+  transactionTime.forEach((time) => {
+    time.classList.toggle("toggle");
   });
 };
 
